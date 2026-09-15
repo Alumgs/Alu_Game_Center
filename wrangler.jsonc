@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "alu-play",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-15",
+  "workers_dev": true,
+  "d1_databases": [
+    { "binding": "DB" }
+  ],
+  "r2_buckets": [
+    { "binding": "GAMES" }
+  ],
+  "vars": {
+    "ADMIN_USERNAME": "Alu",
+    "ADMIN_PASSWORD_SALT": "tP1hIZlrBVdBcPDnEJ-Gzg",
+    "ADMIN_PASSWORD_HASH": "BeXjCv1k33BTLL596A2AGL47LFhw5-Q2sa5UsOpaAic",
+    "ROBOT_BATTLE_ORIGIN": "https://aidc-robot-battle-v13-production.up.railway.app"
+  }
+}
